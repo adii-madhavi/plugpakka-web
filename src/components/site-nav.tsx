@@ -25,7 +25,7 @@ export function SiteNav() {
         />
         <a
           href="#early"
-          className="ml-auto rounded-full bg-lime px-4 py-2 text-sm font-semibold text-ink transition hover:-translate-y-0.5 hover:shadow-[0_10px_40px_-8px_rgb(180_245_68/0.6)] md:ml-0"
+          className="ml-auto whitespace-nowrap rounded-full bg-lime px-3 py-2 text-sm sm:px-4 font-semibold text-ink transition hover:-translate-y-0.5 hover:shadow-[0_10px_40px_-8px_rgb(180_245_68/0.6)] md:ml-0"
         >
           Get early access
         </a>
