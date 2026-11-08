@@ -34,12 +34,14 @@ export function SiteNav() {
   );
 }
 
+/** PlugPakka mark: map pin + plug prongs + check (source: D:/ev station/brand). `size` is the height. */
 export function Logo({ size = 30 }: { size?: number }) {
   return (
-    <span className="grid place-items-center rounded-lg bg-lime" style={{ width: size, height: size }} aria-hidden="true">
-      <svg width={size * 0.6} height={size * 0.6} viewBox="0 0 24 24">
-        <path d="M13 2 4 14h6l-1 8 9-12h-6z" fill="#06080d" />
-      </svg>
-    </span>
+    <svg height={size} width={(size * 300) / 430} viewBox="106 36 300 430" aria-hidden="true" className="shrink-0">
+      <rect x="209" y="36" width="30" height="80" rx="15" fill="#b4f544" />
+      <rect x="273" y="36" width="30" height="80" rx="15" fill="#b4f544" />
+      <path d="M256 452 L149 312 A136 136 0 1 1 363 312 Z" fill="#b4f544" stroke="#b4f544" strokeWidth="28" strokeLinejoin="round" />
+      <path d="M196 232 L239 275 L318 196" fill="none" stroke="#06080d" strokeWidth="36" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
   );
 }
